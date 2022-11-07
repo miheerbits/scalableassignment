@@ -1,0 +1,13 @@
+{
+    "name": "docker_profile_service",
+    "version": "1.0.0",
+    "description": "Profile Service on Docker",
+    "author": "Bharani Dharan K",
+    "main": "profile.js",
+    "scripts": {
+      "start": "node profile.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1"
+    }
+  }

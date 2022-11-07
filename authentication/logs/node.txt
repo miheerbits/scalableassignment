@@ -1,0 +1,106 @@
+Name:               minikube
+Roles:              control-plane
+Labels:             beta.kubernetes.io/arch=arm64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=arm64
+                    kubernetes.io/hostname=minikube
+                    kubernetes.io/os=linux
+                    minikube.k8s.io/commit=f4b412861bb746be73053c9f6d2895f12cf78565
+                    minikube.k8s.io/name=minikube
+                    minikube.k8s.io/primary=true
+                    minikube.k8s.io/updated_at=2022_07_16T18_22_38_0700
+                    minikube.k8s.io/version=v1.26.0
+                    node-role.kubernetes.io/control-plane=
+                    node.kubernetes.io/exclude-from-external-load-balancers=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///var/run/cri-dockerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Sat, 16 Jul 2022 18:22:37 +0530
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  minikube
+  AcquireTime:     <unset>
+  RenewTime:       Sun, 24 Jul 2022 11:15:24 +0530
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Sun, 24 Jul 2022 11:13:12 +0530   Sat, 16 Jul 2022 18:22:36 +0530   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Sun, 24 Jul 2022 11:13:12 +0530   Sat, 16 Jul 2022 18:22:36 +0530   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Sun, 24 Jul 2022 11:13:12 +0530   Sat, 16 Jul 2022 18:22:36 +0530   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Sun, 24 Jul 2022 11:13:12 +0530   Wed, 20 Jul 2022 20:17:01 +0530   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  192.168.49.2
+  Hostname:    minikube
+Capacity:
+  cpu:                4
+  ephemeral-storage:  61255492Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  hugepages-32Mi:     0
+  hugepages-64Ki:     0
+  memory:             8039920Ki
+  pods:               110
+Allocatable:
+  cpu:                4
+  ephemeral-storage:  61255492Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  hugepages-32Mi:     0
+  hugepages-64Ki:     0
+  memory:             8039920Ki
+  pods:               110
+System Info:
+  Machine ID:                 882128f231464a7d861a5b7cb14d6fce
+  System UUID:                882128f231464a7d861a5b7cb14d6fce
+  Boot ID:                    cc936967-d919-4b58-ae16-b350f345ac06
+  Kernel Version:             5.10.104-linuxkit
+  OS Image:                   Ubuntu 20.04.4 LTS
+  Operating System:           linux
+  Architecture:               arm64
+  Container Runtime Version:  docker://20.10.17
+  Kubelet Version:            v1.24.1
+  Kube-Proxy Version:         v1.24.1
+PodCIDR:                      10.244.0.0/24
+PodCIDRs:                     10.244.0.0/24
+Non-terminated Pods:          (17 in total)
+  Namespace                   Name                                              CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                              ------------  ----------  ---------------  -------------  ---
+  default                     counter                                           0 (0%)        0 (0%)      0 (0%)           0 (0%)         17h
+  default                     cpu-demo                                          500m (12%)    1 (25%)     0 (0%)           0 (0%)         22h
+  default                     docker-authentication-service-79cbfbdcb6-rgd7c    500m (12%)    500m (12%)  64Mi (0%)        128Mi (1%)     109m
+  default                     docker-profile-service-5b6479b85b-jrc9c           0 (0%)        0 (0%)      0 (0%)           0 (0%)         43m
+  default                     docker-transaction-service-7f4855f8cf-zbnfx       0 (0%)        0 (0%)      0 (0%)           0 (0%)         7d
+  default                     nginx                                             0 (0%)        0 (0%)      0 (0%)           0 (0%)         17h
+  kube-system                 coredns-6d4b75cb6d-vdskx                          100m (2%)     0 (0%)      70Mi (0%)        170Mi (2%)     7d16h
+  kube-system                 etcd-minikube                                     100m (2%)     0 (0%)      100Mi (1%)       0 (0%)         7d16h
+  kube-system                 kube-apiserver-minikube                           250m (6%)     0 (0%)      0 (0%)           0 (0%)         7d16h
+  kube-system                 kube-controller-manager-minikube                  200m (5%)     0 (0%)      0 (0%)           0 (0%)         7d16h
+  kube-system                 kube-proxy-tjd4z                                  0 (0%)        0 (0%)      0 (0%)           0 (0%)         7d16h
+  kube-system                 kube-scheduler-minikube                           100m (2%)     0 (0%)      0 (0%)           0 (0%)         7d16h
+  kube-system                 metrics-server-59db746ffb-gtt2f                   100m (2%)     0 (0%)      200Mi (2%)       0 (0%)         3d14h
+  kube-system                 node-problem-detector-v0.1-t7fsl                  20m (0%)      200m (5%)   20Mi (0%)        100Mi (1%)     77m
+  kube-system                 storage-provisioner                               0 (0%)        0 (0%)      0 (0%)           0 (0%)         7d16h
+  kubernetes-dashboard        dashboard-metrics-scraper-78dbd9dbf5-9mc8c        0 (0%)        0 (0%)      0 (0%)           0 (0%)         7d15h
+  kubernetes-dashboard        kubernetes-dashboard-5fd5574d9f-wwckd             0 (0%)        0 (0%)      0 (0%)           0 (0%)         7d15h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                1870m (46%)  1700m (42%)
+  memory             454Mi (5%)   398Mi (5%)
+  ephemeral-storage  0 (0%)       0 (0%)
+  hugepages-1Gi      0 (0%)       0 (0%)
+  hugepages-2Mi      0 (0%)       0 (0%)
+  hugepages-32Mi     0 (0%)       0 (0%)
+  hugepages-64Ki     0 (0%)       0 (0%)
+Events:
+  Type    Reason                   Age                From             Message
+  ----    ------                   ----               ----             -------
+  Normal  Starting                 54m                kube-proxy       
+  Normal  Starting                 54m                kubelet          Starting kubelet.
+  Normal  NodeHasSufficientMemory  54m (x8 over 54m)  kubelet          Node minikube status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    54m (x8 over 54m)  kubelet          Node minikube status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     54m (x7 over 54m)  kubelet          Node minikube status is now: NodeHasSufficientPID
+  Normal  NodeAllocatableEnforced  54m                kubelet          Updated Node Allocatable limit across pods
+  Normal  RegisteredNode           54m                node-controller  Node minikube event: Registered Node minikube in Controller

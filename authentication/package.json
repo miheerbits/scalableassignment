@@ -1,0 +1,13 @@
+{
+  "name": "docker_authentication_service",
+  "version": "1.0.0",
+  "description": "Authentication Service on Docker",
+  "author": "Bharani Dharan K",
+  "main": "authentication.js",
+  "scripts": {
+    "start": "node authentication.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}

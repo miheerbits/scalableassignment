@@ -1,0 +1,12 @@
+NAME                                             READY   STATUS             RESTARTS         AGE
+counter                                          3/3     Running            6 (53m ago)      17h
+cpu-demo                                         0/1     CrashLoopBackOff   86 (4m58s ago)   22h
+cron-27644022-jpxv9                              0/1     Completed          0                2m32s
+cron-27644023-7frhr                              0/1     Completed          0                92s
+cron-27644024-vdbtf                              0/1     Completed          0                32s
+cron-manual-g9j-pp6fd                            0/1     Completed          0                17h
+cron-manual-kh9-td9q6                            0/1     Completed          0                11m
+docker-authentication-service-79cbfbdcb6-rgd7c   1/1     Running            1 (53m ago)      108m
+docker-profile-service-5b6479b85b-jrc9c          1/1     Running            0                42m
+docker-transaction-service-7f4855f8cf-zbnfx      1/1     Running            6 (53m ago)      7d
+nginx                                            1/1     Running            2 (53m ago)      17h

@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: docker-profile-service
+spec:
+  selector:
+    app: docker-profile-service
+  ports:
+    - port: 35351
+      targetPort: 2301
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docker-profile-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: docker-profile-service
+  template:
+    metadata:
+      labels:
+        app: docker-profile-service
+    spec:
+      containers:
+        - name: docker-profile-service
+          image: bhaarn/docker_profile_service:latest
+          ports:
+            - containerPort: 2301
